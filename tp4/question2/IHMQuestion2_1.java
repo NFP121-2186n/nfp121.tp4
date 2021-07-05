@@ -29,22 +29,30 @@ public class IHMQuestion2_1 extends JFrame {
 
         // à compléter
         // le bouton A a 3 observateurs jbo1, jbo2 et jbo3
+        ActionListener clearText = new ActionListener(){
+            public void actionPerformed(ActionEvent ea){
+                contenu.setText("");
+            }
+        };
+    
+//        boutonA.addActionListener(clearText);
+//        boutonB.addActionListener(clearText);
+//        boutonC.addActionListener(clearText);
         ActionListener jbo1 = new ActionListener(){
             public void actionPerformed(ActionEvent ea){
-
                 contenu.append("observateur jbo1: clic sur button " + ((JButton) ea.getSource()).getLabel() + "\n");
             }
         };
         
         ActionListener jbo2 = new ActionListener(){
             public void actionPerformed(ActionEvent ea){
-            	contenu.append("observateur jbo2: clic sur button " + ((JButton) ea.getSource()).getLabel() + "\n");
+                contenu.append("observateur jbo2: clic sur button " + ((JButton) ea.getSource()).getLabel() + "\n");
             }
         };
         
         ActionListener jbo3 = new ActionListener(){
             public void actionPerformed(ActionEvent ea){
-            	contenu.append("observateur jbo3: clic sur button " + ((JButton) ea.getSource()).getLabel() + "\n");
+                contenu.append("observateur jbo3: clic sur button " + ((JButton) ea.getSource()).getLabel() + "\n");
             }
         };
         boutonA.addActionListener(jbo1);

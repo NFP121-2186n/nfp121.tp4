@@ -46,7 +46,7 @@ public class IHMCalculetteTest extends junit.framework.TestCase{
         }
     }
 
-    /**
+    /**@
      * Supprime les engagements
      *
      * Méthode appelée après chaque appel de méthode de test.
